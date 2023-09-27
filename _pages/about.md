@@ -34,4 +34,6 @@ At Amazon I've worked on <a href="https://www.amazon.science/alexa-prize/socialb
 
 I work primarily on conversational AI, particularly building and evaluating open-domain dialogue systems. My research interests include socially-aware NLP with social commonsense reasoning, large language models, and AI for social good. I am also broadly interested in AI alignment, responsible AI, and human-centered NLP. 
 
-Outside of work, I enjoy reading, photography, playing badminton and volleyball, and screenwriting. In 2021, I co-founded <a href="https://www.startfilmstudio.org/home">STArt Film Studio</a> with friends in Seattle, and wrote my <a href="https://www.startfilmstudio.org/film-projects#h.4c6r5ada2ogv">first short film</a> which was nominated for the Award at Seattle International Film Festival (SIFF) 2022. 
+Outside of work, I enjoy reading, photography, playing badminton and volleyball, and screenwriting. In 2021, I co-founded <a href="https://www.startfilmstudio.org/home">STArt Film Studio</a> with friends in Seattle, and wrote my <a href="https://www.startfilmstudio.org/film-projects#h.4c6r5ada2ogv">first short film</a>  about life during a special hard life in the pandemic. 
+
+---
