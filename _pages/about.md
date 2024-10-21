@@ -18,9 +18,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>sijial@amazon.com</p>
-    <p>1100 Enterprise Way</p>
-    <p>Sunnyvale, CA 94089</p>
+    <p><first-name>.<last-name>@princeton.edu</p>
+    <p>8 Lawrence Dr</p>
+    <p>Princeton, NJ 08540</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -28,12 +28,13 @@ latest_posts: false  # includes a list of the newest posts
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a research scientist at <a href="https://www.amazon.science/research-areas/conversational-ai-natural-language-processing">Amazon Alexa AI</a> in Sunnyvale, where I work on conversational AI and natural language understanding.
+PhD Student of <a href="https://www.cs.princeton.edu/">Computer Science</a> at <a href="https://www.princeton.edu/">Princeton University</a>
+Research Areas: AI / NLP / LLM
 
-At Amazon I've worked on <a href="https://www.amazon.science/alexa-prize/socialbot-grand-challenge">Alexa Prize SocialBot</a> with <a href="https://scholar.google.com/citations?user=w90wOucAAAAJ&hl=en">Dr. Yang Liu</a> and <a href="https://scholar.google.com/citations?user=GMcL_9kAAAAJ&hl=en">Dr. Dilek Hakkani-Tur</a>, and <a href="https://www.aboutamazon.com/news/devices/amazon-alexa-generative-ai">building new Alexa LLM</a>. Previously, I received dual undergraduate degrees in Sociology and Economics from <a href="https://english.pku.edu.cn/">Peking University</a>, where I did my thesis with <a href="http://www.shehui.pku.edu.cn/sz/content.aspx?nodeid=72">Prof. Jianxin Li</a>. Then I did my Masters in Statistics at <a href="https://www.cmu.edu/dietrich/statistics-datascience/index.html">Carnegie Mellon University</a>, advised by <a href="https://www.stat.cmu.edu/~hseltman/AboutMe.html">Prof. Howard Seltman</a>.
+Hello! I am a 1st year CS PhD at Princeton University working with <a href="https://www.peterhenderson.co/">Peter Henderson</a>. Before that, I worked as a research scientist in Amazon Foundation Model (Amazon AGI) Post-Training team with <a href="https://scholar.google.com/citations?user=w90wOucAAAAJ&hl=en">Dr. Yang Liu</a> and <a href="https://siebelschool.illinois.edu/about/people/faculty/dilek">Prof. Dilek Hakkani-Tur</a> in Sunnyvale, CA. Previously, I did my Bachelors at <a href="https://english.pku.edu.cn/">Peking University</a> and then did my Masters at <a href="https://www.cmu.edu/dietrich/statistics-datascience/index.html">Carnegie Mellon University</a>.
 
-I work primarily on conversational AI, particularly building and evaluating open-domain dialogue systems. My research interests include socially-aware NLP with social commonsense reasoning, large language models, and AI for social good. I am also broadly interested in AI alignment, responsible AI, and human-centered NLP. 
+I work primarily on natural language processing, large language models and dialogue systems. I am particularly interested in AI alignment, reasoning, and agentic behavior especially in multi-agent interactions. I am also broadly interested in socially-aware NLP and AI safety. 
 
-Outside of work, I enjoy playing Pokemon games, sports (e.g. badminton, volleyball, rockclimbing), photography, and screenwriting. In 2021, I co-founded <a href="https://www.startfilmstudio.org/home">STArt Film Studio</a> with friends in Seattle, and wrote my <a href="https://www.startfilmstudio.org/film-projects#h.4c6r5ada2ogv">first short film</a>  about life during the pandemic time to cheer up the local community. 
+Outside of work, I am a foodie who loves to discover local hidden gems and share with my dear friends. I also enjoy a healthy lifestyle and love doing a wide range of sports, and I recently have started running and finished my first half marathon in San Francisco in 2024. Being a language lover at heart, I've been pre-trained with Chinese and fine-tuned on English, Korean, German and Japanese. I've also touched upon scriptwriting for a bit, and wrote <a herf="https://www.startfilmstudio.org/first-time-filmmaker-incubator/wedding-bells">a short film</a> based on a real story during the pandemic time which won several local film awards in Seattle, WA. 
 
 ---
