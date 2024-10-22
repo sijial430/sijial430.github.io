@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I presented work on interactive human evaluation of open-domain dialog systems at AAAI 2023!
+I presented work on interactive human evaluation of open-domain dialog systems at AAAI 2023 :hugging_face::sparkles:
