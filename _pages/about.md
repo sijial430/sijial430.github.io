@@ -5,8 +5,8 @@ permalink: /
 subtitle: 
   <p style="text-align:left">
     <a href="mailto:sijia.liu@princeton.edu">Email</a> &nbsp;/&nbsp;
-    # <a href="assets/pdf/SijiaLiu_CV.pdf">CV</a> &nbsp;/&nbsp;
-    # <a href="assets/SijiaLiu-bio.txt">Bio</a> &nbsp;/&nbsp;
+    <a href="assets/pdf/SijiaLiu_CV.pdf">CV</a> &nbsp;/&nbsp;
+    <a href="assets/SijiaLiu-bio.txt">Bio</a> &nbsp;/&nbsp;
     <a href="https://scholar.google.com/citations?user=WMMaqKkAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp;/&nbsp;
     <a href="https://twitter.com/letti_liu">Twitter</a> &nbsp;/&nbsp;
     <a href="https://github.com/sijial430/">Github</a>

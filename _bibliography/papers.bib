@@ -4,11 +4,15 @@
 @string{aps = {American Physical Society,}}
 
 @Article{Intelligence2024,
+ abbr={Model Card},
  author = {Amazon Artificial General Intelligence},
  title = {The Amazon Nova family of models: Technical report and model card},
+ bibtex_show={true},
  year = {2024},
  url = {https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card},
  journal = {Amazon Technical Reports},
+ abstract={We present Amazon Nova, a new generation of state-of-the-art foundation models that deliver frontier intelligence and industry-leading price performance. Amazon Nova Pro is a highly-capable multimodal model with the best combination of accuracy, speed, and cost for a wide range of tasks. Amazon Nova Lite is a low-cost multimodal model that is lightning fast for processing images, video, documents and text. Amazon Nova Micro is a text-only model that delivers our lowest-latency responses at very low cost. Amazon Nova Canvas is an image generation model that creates professional grade images with rich customization controls. Amazon Nova Reel is a video generation model offering high-quality outputs, customization, and motion control. Our models were built responsibly and with a commitment to customer trust, security, and reliability. We report benchmarking results for core capabilities, agentic performance, long context, functional adaptation, runtime performance, and human evaluation.},
+ pdf={nova-tech-report-20250317-0810.pdf},
 }
 
 @misc{ferraz2024llmselfcorrectiondecrimdecompose,
@@ -26,8 +30,8 @@
 }
 
 @article{Liu_Lange_Hedayatnia_Papangelis_Jin_Wirth_Liu_Hakkani-Tur_2023, 
-      abbr={AAAI},
-      title={Towards Credible Human Evaluation of Open-Domain Dialog Systems Using Interactive Setup}, 
+      abbr={AAAI, NeurIPS, EMNLP},
+      title={Towards Credible Human Evaluation of Open-Domain Dialog Systems Using Interactive Setup <span style="color: red"><b>(Oral)</b></span>}, 
       bibtex_show={true},
       abstract={Evaluating open-domain conversation models has been an open challenge due to the open-ended nature of conversations. In addition to static evaluations, recent work has started to explore a variety of per-turn and per-dialog interactive evaluation mechanisms and provide advice on the best setup. In this work, we adopt the interactive evaluation framework and further apply to multiple models with a focus on per-turn evaluation techniques. Apart from the widely used setting where participants select the best response among different candidates at each turn, one more novel per-turn evaluation setting is adopted, where participants can select all appropriate responses with different fallback strategies to continue the conversation when no response is selected. We evaluate these settings based on sensitivity and consistency using four GPT2-based models that differ in model sizes or fine-tuning data. To better generalize to any model groups with no prior assumptions on their rankings and control evaluation costs for all setups, we also propose a methodology to estimate the required sample size given a minimum performance gap of interest before running most experiments. Our comprehensive human evaluation results shed light on how to conduct credible human evaluations of open domain dialog systems using the interactive setup, and suggest additional future directions.}, number={11}, journal={Proceedings of the AAAI Conference on Artificial Intelligence},
       volume={37}, 
@@ -63,7 +67,7 @@
       bibtex_show={true},
       pdf={improving-contradiction-detection.sigdial2022.pdf},
       abstract={Though chatbots based on large neural models can often produce fluent responses in open domain conversations, one salient error type is contradiction or inconsistency with the preceding conversation turns. Previous work has treated contradiction detection in bot responses as a task similar to natural language inference, e.g., detect the contradiction between a pair of bot utterances. However, utterances in conversations may contain co-references or ellipsis, and using these utterances as is may not always be sufficient for identifying contradictions. This work aims to improve the contradiction detection via rewriting all bot utterances to restore antecedents and ellipsis. We curated a new dataset for utterance rewriting and built a rewriting model on it. We empirically demonstrate that this model can produce satisfactory rewrites to make bot utterances more complete. Furthermore, using rewritten utterances improves contradiction detection performance significantly, e.g., the AUPR and joint accuracy scores (detecting contradiction along with evidence) increase by 6.5% and 4.5% (absolute increase), respectively.},
-      title={Improving Bot Response Contradiction Detection via Utterance Rewriting}, 
+      title={Improving Bot Response Contradiction Detection via Utterance Rewriting <span style="color: red"><b>(Oral)</b></span>}, 
       author={Di Jin and Sijia Liu and Yang Liu and Dilek Hakkani-Tur},
       year={2022},
       month={July},
