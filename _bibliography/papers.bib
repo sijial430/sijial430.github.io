@@ -23,7 +23,7 @@
       author={Thomas Palmeira Ferraz and Kartik Mehta and Yu-Hsiang Lin and Haw-Shiuan Chang and Shereen Oraby and Sijia Liu and Vivek Subramanian and Tagyoung Chung and Mohit Bansal and Nanyun Peng},
       abstract={Instruction following is a key capability for LLMs. However, recent studies have shown that LLMs often struggle with instructions containing multiple constraints (e.g. a request to create a social media post "in a funny tone" with "no hashtag"). Despite this, most evaluations focus solely on synthetic data. To address this, we introduce RealInstruct, the first benchmark designed to evaluate LLMs' ability to follow real-world multi-constrained instructions by leveraging queries real users asked AI assistants. We also investigate model-based evaluation as a cost-effective alternative to human annotation for this task. Our findings reveal that even the proprietary GPT-4 model fails to meet at least one constraint on over 21% of instructions, highlighting the limitations of state-of-the-art models. To address the performance gap between open-source and proprietary models, we propose the Decompose, Critique and Refine (DeCRIM) self-correction pipeline, which enhances LLMs' ability to follow constraints. DeCRIM works by decomposing the original instruction into a list of constraints and using a Critic model to decide when and where the LLM's response needs refinement. Our results show that DeCRIM improves Mistral's performance by 7.3% on RealInstruct and 8.0% on IFEval even with weak feedback. Moreover, we demonstrate that with strong feedback, open-source LLMs with DeCRIM can outperform GPT-4 on both benchmarks.},
       year={2024},
-      journal={EMNLP, NeurIPS Workshop on System 2 Reasoning at Scale},
+      journal={EMNLP, NeurIPS Workshop on System 2 Reasoning at Scale <span style="color: red"><b><i>(Oral*)</i></b></span>},
       eprint={2410.06458},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
@@ -35,7 +35,7 @@
 
 @article{Liu_Lange_Hedayatnia_Papangelis_Jin_Wirth_Liu_Hakkani-Tur_2023, 
       abbr={AAAI},
-      title={Towards Credible Human Evaluation of Open-Domain Dialog Systems Using Interactive Setup <span style="color: red"><b><i>(Oral*)</i></b></span>}, 
+      title={Towards Credible Human Evaluation of Open-Domain Dialog Systems Using Interactive Setup}, 
       bibtex_show={true},
       abstract={Evaluating open-domain conversation models has been an open challenge due to the open-ended nature of conversations. In addition to static evaluations, recent work has started to explore a variety of per-turn and per-dialog interactive evaluation mechanisms and provide advice on the best setup. In this work, we adopt the interactive evaluation framework and further apply to multiple models with a focus on per-turn evaluation techniques. Apart from the widely used setting where participants select the best response among different candidates at each turn, one more novel per-turn evaluation setting is adopted, where participants can select all appropriate responses with different fallback strategies to continue the conversation when no response is selected. We evaluate these settings based on sensitivity and consistency using four GPT2-based models that differ in model sizes or fine-tuning data. To better generalize to any model groups with no prior assumptions on their rankings and control evaluation costs for all setups, we also propose a methodology to estimate the required sample size given a minimum performance gap of interest before running most experiments. Our comprehensive human evaluation results shed light on how to conduct credible human evaluations of open domain dialog systems using the interactive setup, and suggest additional future directions.}, number={11}, journal={Proceedings of the AAAI Conference on Artificial Intelligence},
       volume={37}, 
@@ -46,7 +46,7 @@
       year={2023},
       month={Jun.}, 
       pages={13264-13272},
-      journal={AAAI, NeurIPS Workshop on Human Evaluation of Generative Models, EMNLP Workshop on Natural Language Generation, Evaluation, and Metrics},
+      journal={AAAI <span style="color: red"><b><i>(Oral)</i></b></span>, NeurIPS Workshop on Human Evaluation of Generative Models <span style="color: red"><b><i>(Oral*)</i></b></span>, EMNLP Workshop on Natural Language Generation, Evaluation, and Metrics <span style="color: red"><b><i>(Oral*)</i></b></span>},
       pdf={towards-credible-human-evaluation.aaai2023.pdf},
       slides={https://slideslive.com/38993353/towards-credible-human-evaluation-of-opendomain-dialog-systems-using-interactive-setup?ref=folder-110226},
       poster={towards-credible-human-evaluation.aaai2023.poster.pdf},
@@ -77,7 +77,7 @@
       author={Di Jin and Sijia Liu and Yang Liu and Dilek Hakkani-Tur},
       year={2022},
       month={July},
-      journal = {SIGDIAL},
+      journal = {SIGDIAL <span style="color: red"><b><i>(Oral*)</i></b></span>},
       code={https://github.com/jind11/utterance-rewriting},
       slides={https://www.youtube.com/watch?v=ZEPaSnSGjiw}
 }
