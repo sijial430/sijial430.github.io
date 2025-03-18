@@ -13,6 +13,7 @@
  journal = {Amazon Technical Reports},
  abstract={We present Amazon Nova, a new generation of state-of-the-art foundation models that deliver frontier intelligence and industry-leading price performance. Amazon Nova Pro is a highly-capable multimodal model with the best combination of accuracy, speed, and cost for a wide range of tasks. Amazon Nova Lite is a low-cost multimodal model that is lightning fast for processing images, video, documents and text. Amazon Nova Micro is a text-only model that delivers our lowest-latency responses at very low cost. Amazon Nova Canvas is an image generation model that creates professional grade images with rich customization controls. Amazon Nova Reel is a video generation model offering high-quality outputs, customization, and motion control. Our models were built responsibly and with a commitment to customer trust, security, and reliability. We report benchmarking results for core capabilities, agentic performance, long context, functional adaptation, runtime performance, and human evaluation.},
  pdf={nova-tech-report-20250317-0810.pdf},
+ selected={true},
 }
 
 @misc{ferraz2024llmselfcorrectiondecrimdecompose,
@@ -21,16 +22,18 @@
       bibtex_show={true},
       author={Thomas Palmeira Ferraz and Kartik Mehta and Yu-Hsiang Lin and Haw-Shiuan Chang and Shereen Oraby and Sijia Liu and Vivek Subramanian and Tagyoung Chung and Mohit Bansal and Nanyun Peng},
       abstract={Instruction following is a key capability for LLMs. However, recent studies have shown that LLMs often struggle with instructions containing multiple constraints (e.g. a request to create a social media post "in a funny tone" with "no hashtag"). Despite this, most evaluations focus solely on synthetic data. To address this, we introduce RealInstruct, the first benchmark designed to evaluate LLMs' ability to follow real-world multi-constrained instructions by leveraging queries real users asked AI assistants. We also investigate model-based evaluation as a cost-effective alternative to human annotation for this task. Our findings reveal that even the proprietary GPT-4 model fails to meet at least one constraint on over 21% of instructions, highlighting the limitations of state-of-the-art models. To address the performance gap between open-source and proprietary models, we propose the Decompose, Critique and Refine (DeCRIM) self-correction pipeline, which enhances LLMs' ability to follow constraints. DeCRIM works by decomposing the original instruction into a list of constraints and using a Critic model to decide when and where the LLM's response needs refinement. Our results show that DeCRIM improves Mistral's performance by 7.3% on RealInstruct and 8.0% on IFEval even with weak feedback. Moreover, we demonstrate that with strong feedback, open-source LLMs with DeCRIM can outperform GPT-4 on both benchmarks.},
+      journal={EMNLP},
       year={2024},
       eprint={2410.06458},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2410.06458},
-      pdf={2410.06458v1.pdf}
+      pdf={2410.06458v1.pdf},
+      selected={true}
 }
 
 @article{Liu_Lange_Hedayatnia_Papangelis_Jin_Wirth_Liu_Hakkani-Tur_2023, 
-      abbr={AAAI, NeurIPS, EMNLP},
+      abbr={AAAI},
       title={Towards Credible Human Evaluation of Open-Domain Dialog Systems Using Interactive Setup <span style="color: red"><b>(Oral)</b></span>}, 
       bibtex_show={true},
       abstract={Evaluating open-domain conversation models has been an open challenge due to the open-ended nature of conversations. In addition to static evaluations, recent work has started to explore a variety of per-turn and per-dialog interactive evaluation mechanisms and provide advice on the best setup. In this work, we adopt the interactive evaluation framework and further apply to multiple models with a focus on per-turn evaluation techniques. Apart from the widely used setting where participants select the best response among different candidates at each turn, one more novel per-turn evaluation setting is adopted, where participants can select all appropriate responses with different fallback strategies to continue the conversation when no response is selected. We evaluate these settings based on sensitivity and consistency using four GPT2-based models that differ in model sizes or fine-tuning data. To better generalize to any model groups with no prior assumptions on their rankings and control evaluation costs for all setups, we also propose a methodology to estimate the required sample size given a minimum performance gap of interest before running most experiments. Our comprehensive human evaluation results shed light on how to conduct credible human evaluations of open domain dialog systems using the interactive setup, and suggest additional future directions.}, number={11}, journal={Proceedings of the AAAI Conference on Artificial Intelligence},
@@ -42,6 +45,7 @@
       year={2023},
       month={Jun.}, 
       pages={13264-13272},
+      journal={AAAI, NeurIPS (GEM), EMNLP (HELM)},
       pdf={towards-credible-human-evaluation.aaai2023.pdf},
       poster={towards-credible-human-evaluation.aaai2023.poster.pdf},
       selected={true}
