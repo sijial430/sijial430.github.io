@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I started my PhD journey at <a href="https://www.princeton.edu/">Princeton University</a>! :tada:
+I started my PhD journey at <a href="https://www.princeton.edu/">Princeton University</a>.

@@ -1,3 +1,3 @@
-Sijia Liu is a CS PhD student at Princeton University working on AI/NLP/LLM research. Before that, she was a research scientist at Amazon AGI (previously Alexa AI) in Sunnyvale, where she worked on conversational AI and LLM post-training. 
+Sijia Liu is a CS PhD student at Princeton University working on AI/NLP/LLM research. Before that, she was a research scientist at Amazon AGI (previously Alexa AI) in Sunnyvale, where she contributed as a founding member to conversational AI and LLM post-training research. 
 
 Previously, she received a Masters in Statistics from Carnegie Mellon University in Pittsburgh, where she was advised by Prof. Howard Seltman, and she received dual Bachelor's degrees in Economics and Sociology from Peking University advised by Prof. Jianxin Li and Prof. Lin Tao in Beijing, China. 
