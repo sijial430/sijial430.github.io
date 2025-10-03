@@ -3,6 +3,20 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{liu2025humanline,
+      title={Humanline: Online Alignment as Perceptual Loss}, 
+      bibtex_show={true},
+      author={Sijia Liu and Niklas Muennighoff and Kawin Ethayarajh},
+      abstract={Online alignment (e.g., GRPO) is generally more performant than offline alignment (e.g., DPO) -- but why? Drawing on prospect theory from behavioral economics, we propose a human-centric explanation. We prove that online on-policy sampling better approximates the human-perceived distribution of what the model can produce, and PPO/GRPO-style clipping -- originally introduced to just stabilize training -- recovers a perceptual bias in how humans perceive probability. In this sense, PPO/GRPO act as perceptual losses already. Our theory further suggests that the online/offline dichotomy is itself incidental to maximizing human utility, since we can achieve the same effect by selectively training on any data in a manner that mimics human perception, rather than restricting ourselves to online on-policy data. Doing so would allow us to post-train more quickly, cheaply, and flexibly without sacrificing performance. To this end, we propose a design pattern that explicitly incorporates perceptual distortions of probability into objectives like DPO/KTO/GRPO, creating humanline variants of them. Surprisingly, we find that these humanline variants, even when trained with offline off-policy data, can match the performance of their online counterparts on both verifiable and unverifiable tasks.},
+      year={2025},
+      eprint={2509.24207},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      arxiv={https://arxiv.org/abs/2509.24207},
+      blog={https://pli.princeton.edu/blog/2025/humanline-do-we-really-need-online-alignment},
+      selected={true}
+}
+
 @Article{Intelligence2024,
  abbr={Model Card},
  author = {Amazon Artificial General Intelligence},
