@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-01-26
+date: 2025-12-12
 inline: true
 related_posts: false
 ---
 
-<a href="https://arxiv.org/abs/2509.24207">Humanline</a> has been accepted to ICLR 2026. See you in Rio!
+Received the generous <a href="https://thinkingmachines.ai/blog/tinker-research-and-teaching-grants/">Tinker teaching grant</a> to support our undergraduate <a href="https://princeton-nlp.github.io/cos484/">Introduction to NLP</a> course.
