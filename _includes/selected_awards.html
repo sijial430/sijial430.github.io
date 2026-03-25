@@ -1,0 +1,14 @@
+<div class="awards">
+  {% if site.data.awards != blank -%}
+  <div class="table-responsive">
+    <table class="table table-sm table-borderless">
+    {%- for award in site.data.awards %}
+      <tr>
+        <th scope="row">{{ award.year }}</th>
+        <td>{{ award.title }}, <em>{{ award.source }}</em></td>
+      </tr>
+    {%- endfor %}
+    </table>
+  </div>
+  {%- endif %}
+</div>
