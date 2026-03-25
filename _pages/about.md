@@ -12,7 +12,7 @@ subtitle:
 
 profile:
   align: right
-  image: sijial_pic.jpg
+  image: sijial_pic_cropped.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>sijia.liu@{myschool}.edu</p>
