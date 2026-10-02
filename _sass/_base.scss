@@ -48,6 +48,11 @@ table.table a {
   }
 }
 
+// Bootstrap hardcodes .table { color: #212529 }, which is invisible on the dark background.
+.table {
+  color: var(--global-text-color);
+}
+
 .table-dark {
   background-color: transparent;
 }
