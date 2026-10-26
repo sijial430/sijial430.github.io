@@ -1,6 +1,6 @@
 /* Redesigned homepage (_layouts/home.html, _layouts/bib_row.html).
    Standalone: does not load al-folio's main.css.
-   Warm ivory / near-black palette, one Princeton-orange accent, Newsreader serif. */
+   Ivory page with a purple accent; dark mode is deep purple. Newsreader serif. */
 
 /* ---------- Tokens ---------- */
 :root {
@@ -10,9 +10,9 @@
   --border:    #e5e2d8;  /* rules, outlines */
   --text:      #1a1915;  /* headings, titles */
   --text-2:    #46443e;  /* body, authors */
-  --text-3:    #75736b;  /* dates, brackets, captions */
-  --accent:    #e77500;  /* Princeton orange: underlines, marks */
-  --accent-strong: #b35900; /* orange as text (passes 4.5:1 on --bg) */
+  --text-3:    #6c6a63;  /* dates, brackets, captions */
+  --accent:    #7346c8;  /* purple: underlines, marks (5.8:1 on --bg) */
+  --accent-strong: #5d34ad; /* purple as text: Oral / award tags */
   --tile:      #ffffff;  /* logo tiles stay white in both themes */
   --shadow:    0 1px 2px rgba(26, 25, 21, 0.05), 0 4px 14px rgba(26, 25, 21, 0.08);
   --shadow-lift: 0 2px 4px rgba(26, 25, 21, 0.06), 0 12px 28px rgba(26, 25, 21, 0.12);
@@ -24,17 +24,17 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg:        #151515;
-  --surface:   #1f1e1c;
-  --border:    #2e2d2a;
-  --text:      #f2eee8;
-  --text-2:    #c9c5bd;
-  --text-3:    #96938b;
-  --accent:    #f58025;
-  --accent-strong: #ff9a4a;
-  --tile:      #f6f4ef;
-  --shadow:    0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 14px rgba(0, 0, 0, 0.4);
-  --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.4), 0 12px 28px rgba(0, 0, 0, 0.5);
+  --bg:        #1d1730;  /* deep purple page */
+  --surface:   #282040;
+  --border:    #3b3156;
+  --text:      #f3eefb;
+  --text-2:    #d0c7e2;
+  --text-3:    #a198b8;
+  --accent:    #b08cff;  /* lavender: underlines, marks */
+  --accent-strong: #c4a6ff;
+  --tile:      #f6f3fb;
+  --shadow:    0 1px 2px rgba(8, 4, 20, 0.4), 0 4px 14px rgba(8, 4, 20, 0.45);
+  --shadow-lift: 0 2px 4px rgba(8, 4, 20, 0.45), 0 12px 28px rgba(8, 4, 20, 0.55);
 }
 
 /* ---------- Palettes ----------
@@ -175,11 +175,11 @@ a {
   color: var(--text);
   text-decoration: underline;
   text-decoration-color: var(--accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.17em;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
   transition: text-decoration-thickness 120ms ease-out, color 120ms ease-out;
 }
-a:hover { text-decoration-thickness: 2px; }
+a:hover { text-decoration-thickness: 3px; }
 a:focus-visible, button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -433,8 +433,8 @@ strong, b { color: var(--text); font-weight: 600; }
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: var(--accent);
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 0.17em;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
   text-decoration-skip-ink: none;
 }
 .pub-venue {
@@ -466,10 +466,10 @@ strong, b { color: var(--text); font-weight: 600; }
   cursor: pointer;
   text-decoration: underline;
   text-decoration-color: var(--accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.17em;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
 }
-.link-btn:hover { text-decoration-thickness: 2px; }
+.link-btn:hover { text-decoration-thickness: 3px; }
 .link-btn[aria-expanded="true"] { color: var(--accent-strong); }
 .pub-authors .link-btn { color: var(--text-3); font-size: 0.95em; }
 

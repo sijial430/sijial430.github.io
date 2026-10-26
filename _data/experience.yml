@@ -7,7 +7,7 @@
   when: Summer 2026
   logo: ai2.png
   details:
-    - Long-horizon hypothesis generation.
+    - Research on long-horizon hypothesis generation for <a href="https://allenai.org/blog/autodiscovery">AutoDiscovery</a>.
 
 - org: Amazon AGI
   url: https://www.amazon.science/

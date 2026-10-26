@@ -6,7 +6,7 @@
   function applyTheme(theme) {
     root.setAttribute("data-theme", theme);
     var tint = document.querySelector('meta[name="theme-color"]');
-    if (tint) tint.content = getComputedStyle(root).getPropertyValue("--bg").trim() || (theme === "dark" ? "#151515" : "#faf9f5");
+    if (tint) tint.content = getComputedStyle(root).getPropertyValue("--bg").trim() || (theme === "dark" ? "#1d1730" : "#faf9f5");
     if (toggle) {
       toggle.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
     }
