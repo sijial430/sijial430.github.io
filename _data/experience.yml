@@ -1,0 +1,21 @@
+# Experience list on the homepage (_layouts/home.html), newest first.
+# logo: file in assets/img/logos/. when / place / details are optional; details allow HTML.
+
+- org: Allen Institute for AI (Ai2)
+  url: https://allenai.org/
+  role: Research Intern
+  when: Summer 2026
+  logo: ai2.png
+  details:
+    - Long-horizon hypothesis generation.
+
+- org: Amazon AGI
+  url: https://www.amazon.science/
+  role: Research Scientist, Post-Training Team
+  when: 2021 – 2024
+  place: Sunnyvale, CA
+  logo: amazon.png
+  details:
+    - Contributed to the development of <a href="https://aws.amazon.com/ai/generative-ai/nova/">Amazon Nova</a>, state-of-the-art text and multimodal models.
+    - Contributed to the <a href="https://www.amazon.science/alexa-prize/socialbot-grand-challenge">Alexa Prize SocialBot Grand Challenge</a>, building ultra-long open-domain dialogue systems.
+    - Worked with <a href="https://scholar.google.com/citations?user=w90wOucAAAAJ&hl=en">Dr. Yang Liu</a> and <a href="https://siebelschool.illinois.edu/about/people/faculty/dilek">Prof. Dilek Hakkani-Tur</a>.

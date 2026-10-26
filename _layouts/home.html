@@ -1,0 +1,197 @@
+---
+---
+{%- assign full_name = site.first_name | append: " " | append: site.last_name -%}
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ full_name }}</title>
+  <meta name="description" content="{{ page.meta_description | default: full_name | strip_html | strip }}">
+  <meta name="theme-color" content="#faf9f5">
+  <link rel="icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url }}">
+
+  <!-- Set the theme before first paint. Same localStorage key as the rest of the site. -->
+  <script>
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem("theme"); } catch (e) {}
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+      var tint = document.querySelector('meta[name="theme-color"]');
+      if (tint) tint.content = theme === "dark" ? "#151515" : "#faf9f5";
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{ site.fontawesome.version }}/css/all.min.css" integrity="{{ site.fontawesome.integrity }}" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@{{ site.academicons.version }}/css/academicons.min.css" integrity="{{ site.academicons.integrity }}" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url | bust_file_cache }}">
+</head>
+
+<body>
+  <nav class="topbar" aria-label="Main">
+    <div class="topbar-inner">
+      <a class="brand" href="#about"><img src="{{ '/assets/img/logos/princeton-shield.png' | relative_url }}" alt="" aria-hidden="true">{{ full_name }}</a>
+      <div class="nav-links">
+        {%- if page.news %}<a href="#news">News</a>{% endif %}
+        {%- if page.selected_papers %}<a href="#publications">Publications</a>{% endif %}
+        {%- if page.experience %}<a href="#experience">Experience</a>{% endif %}
+        {%- if page.awards %}<a href="#awards">Awards</a>{% endif %}
+        {%- if page.service %}<a href="#service">Service</a>{% endif %}
+        {%- if page.life %}<a href="#life">Life</a>{% endif %}
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M2 12h2.2M19.8 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page">
+    <header class="hero" id="about">
+      {%- if page.profile.image %}
+      <div class="hero-photo-col">
+        <img class="hero-photo" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}" alt="{{ full_name }}">
+      </div>
+      {%- endif %}
+      <div class="hero-body">
+        <h1>{{ full_name }}</h1>
+        {%- if page.role %}<p class="hero-role">{{ page.role }}</p>{% endif %}
+        {%- if page.interests %}<p class="hero-interests">{{ page.interests }}</p>{% endif %}
+        <p class="hero-email"><span>{{ site.email }}</span></p>
+        <p class="hero-links">
+          <a href="mailto:{{ site.email }}"><i class="fas fa-envelope" aria-hidden="true"></i>Email</a>
+          {%- if site.scholar_userid %}<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"><i class="ai ai-google-scholar" aria-hidden="true"></i>Scholar</a>{% endif %}
+          {%- if site.github_username %}<a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>{% endif %}
+          {%- if site.twitter_username %}<a href="https://x.com/{{ site.twitter_username }}"><svg class="icon-x" viewBox="0 0 512 512" aria-hidden="true"><!-- X logo: Font Awesome Free 6.4.2, CC BY 4.0 --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>X</a>{% endif %}
+          {%- if site.linkedin_username %}<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a>{% endif %}
+          {%- if site.instagram_id %}<a href="https://www.instagram.com/{{ site.instagram_id }}"><i class="fab fa-instagram" aria-hidden="true"></i>Instagram</a>{% endif %}
+        </p>
+        <div class="hero-bio">
+          {{ content }}
+        </div>
+      </div>
+    </header>
+
+    {%- if page.news and site.announcements.enabled %}
+    <section class="section" id="news">
+      <h2>News</h2>
+      {%- assign news = site.news | sort: "date" | reverse %}
+      <ul class="news-list">
+        {%- for item in news limit: site.announcements.limit %}
+        <li>
+          <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%b %Y" }}</time>
+          <div class="news-text">
+            {%- if item.inline -%}
+              {{ item.content | remove: '<p>' | remove: '</p>' | strip }}
+            {%- else -%}
+              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {%- endif -%}
+          </div>
+        </li>
+        {%- endfor %}
+      </ul>
+      {%- assign news_size = news | size %}
+      {%- if news_size > site.announcements.limit %}
+      <p class="more"><a href="{{ '/news/' | relative_url }}">All news</a></p>
+      {%- endif %}
+    </section>
+    {%- endif %}
+
+    {%- if page.selected_papers %}
+    <section class="section" id="publications">
+      <h2>Selected Publications</h2>
+      {%- if page.pub_groups %}
+        {%- for group in page.pub_groups %}
+      <div class="pub-group" id="{{ group.id }}">
+        <h3>{{ group.title }}</h3>
+        <div class="pubs">
+          {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true && topic={{ group.topic }}]* -g none -T bib_row %}
+        </div>
+      </div>
+        {%- endfor %}
+      {%- else %}
+      <div class="pubs">
+        {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* -g none -T bib_row %}
+      </div>
+      {%- endif %}
+      <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
+    </section>
+    {%- endif %}
+
+    {%- if page.experience and site.data.experience %}
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+      <ul class="exp-list">
+        {%- for item in site.data.experience %}
+        {% include home_exp_item.html item=item %}
+        {%- endfor %}
+      </ul>
+      {%- if page.education and site.data.education %}
+      <div class="sub-group" id="education">
+        <h3>Education</h3>
+        <ul class="exp-list">
+          {%- for item in site.data.education %}
+          {% include home_exp_item.html item=item %}
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+    </section>
+    {%- endif %}
+
+    {%- if page.awards and site.data.awards %}
+    <section class="section" id="awards">
+      <h2>Awards &amp; Scholarships</h2>
+      <ul class="award-list">
+        {%- for item in site.data.awards %}
+        <li>
+          <span class="award-title">{{ item.title }}{% if item.source %}<span class="award-source">, {{ item.source }}</span>{% endif %}</span>
+          <span class="award-year">{{ item.year }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+
+    {%- if page.service and site.data.service %}
+    <section class="section" id="service">
+      <h2>Service</h2>
+      <dl class="register">
+        {%- for row in site.data.service %}
+        <div class="register-row">
+          <dt>{{ row.label }}</dt>
+          <dd><ul class="dot-run">{% for v in row.items %}<li>{{ v }}</li>{% endfor %}</ul></dd>
+        </div>
+        {%- endfor %}
+      </dl>
+    </section>
+    {%- endif %}
+
+    {%- if page.life and site.data.life %}
+    <section class="section" id="life">
+      <h2>Life</h2>
+      <dl class="register">
+        {%- for item in site.data.life %}
+        <div class="register-row">
+          <dt>{{ item.label }}</dt>
+          <dd>{{ item.text }}</dd>
+        </div>
+        {%- endfor %}
+      </dl>
+    </section>
+    {%- endif %}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ full_name }}{% if site.last_updated %} <span class="sep">·</span> Last updated {{ site.time | date: "%b %Y" }}{% endif %}</p>
+  </footer>
+
+  <script src="{{ '/assets/js/home.js' | relative_url | bust_file_cache }}" defer></script>
+</body>
+</html>

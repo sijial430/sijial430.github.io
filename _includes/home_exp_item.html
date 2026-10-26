@@ -1,0 +1,25 @@
+<!-- One experience / education row on the homepage. Pass item=... -->
+{%- assign item = include.item %}
+<li class="exp-item">
+  <span class="exp-logo">{% if item.logo %}<img src="{{ item.logo | prepend: '/assets/img/logos/' | relative_url }}" alt="" loading="lazy">{% endif %}</span>
+  <div class="exp-text">
+    <div class="exp-role">
+      {%- if item.url %}<a class="exp-org" href="{{ item.url }}">{{ item.org }}</a>{% else %}<span class="exp-org">{{ item.org }}</span>{% endif %}
+      <span class="sep">·</span> {{ item.role }}
+    </div>
+    {%- if item.when or item.place %}
+    <div class="exp-meta">
+      {%- if item.when %}<span class="exp-when">{{ item.when }}</span>{% endif %}
+      {%- if item.when and item.place %} <span class="sep">·</span> {% endif %}
+      {%- if item.place %}{{ item.place }}{% endif -%}
+    </div>
+    {%- endif %}
+    {%- if item.details %}
+    <ul class="exp-details">
+      {%- for line in item.details %}
+      <li>{{ line }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</li>

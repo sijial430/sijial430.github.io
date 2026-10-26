@@ -1,0 +1,22 @@
+# "Education" block under Experience on the homepage (_layouts/home.html), newest first.
+# Same fields as experience.yml.
+
+- org: Carnegie Mellon University
+  url: https://www.cmu.edu/dietrich/statistics-datascience/index.html
+  role: M.Sc. in Statistics and Data Science
+  when: 2017 – 2018
+  place: Pittsburgh, PA
+  logo: cmu.png
+  details:
+    - Summa cum laude.
+    - Advised by Prof. Howard J. Seltman and Prof. Joel Greenhouse.
+
+- org: Peking University
+  url: https://english.pku.edu.cn/
+  role: B.A. in Economics, B.Law in Sociology
+  when: 2013 – 2017
+  place: Beijing, China
+  logo: pku.png
+  details:
+    - Summa cum laude, ranked 1/70.
+    - Advised by Prof. Lin Tao and Prof. Jianxin Li.
