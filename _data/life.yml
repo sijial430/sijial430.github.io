@@ -6,5 +6,8 @@
 - label: Languages
   text: A language lover at heart. Pre-trained on Chinese and fine-tuned on English, Korean, German, and Japanese, though I might suffer from catastrophic forgetting sometimes.
 
-- label: Cats
+- label: Arts
+  text: Co-founder of the STArt (Seattle Theater Art) Film Studio, and scriptwriter of <em>Wedding Bells</em>.
+
+- label: Pets
   text: A cat lover, with a cute beige American shorthair.

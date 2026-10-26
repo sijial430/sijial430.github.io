@@ -37,6 +37,102 @@
   --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.4), 0 12px 28px rgba(0, 0, 0, 0.5);
 }
 
+/* ---------- Palettes ----------
+   Pick one with `palette:` in _config.yml (stamped on <html data-palette>).
+   "ivory" (no block) uses the tokens above. Each palette keeps text at >= 4.5:1. */
+/* honey: warm yellow */
+:root[data-palette="honey"]:not([data-theme="dark"]) {
+  --bg: #fbf5e3;
+  --surface: #f3e9cc;
+  --border: #e6d8b4;
+  --text: #231d10;
+  --text-2: #4a402c;
+  --text-3: #74684d;
+  --accent: #e19a12;
+  --accent-strong: #8c5700;
+  --tile: #ffffff;
+}
+:root[data-palette="honey"][data-theme="dark"] {
+  --bg: #17140d;
+  --surface: #221d13;
+  --border: #372e1f;
+  --text: #f5edda;
+  --text-2: #d2c7ae;
+  --text-3: #a0957c;
+  --accent: #f0b23c;
+  --accent-strong: #ffc35a;
+  --tile: #f8f2e2;
+}
+/* apricot: warm peach */
+:root[data-palette="apricot"]:not([data-theme="dark"]) {
+  --bg: #fcf3ec;
+  --surface: #f6e4d6;
+  --border: #ebd3c0;
+  --text: #261a14;
+  --text-2: #4e3b30;
+  --text-3: #725e53;
+  --accent: #e46a3a;
+  --accent-strong: #ac4519;
+  --tile: #ffffff;
+}
+:root[data-palette="apricot"][data-theme="dark"] {
+  --bg: #171210;
+  --surface: #231a16;
+  --border: #382b24;
+  --text: #f6eae3;
+  --text-2: #d6c4ba;
+  --text-3: #a39187;
+  --accent: #f28b5c;
+  --accent-strong: #ffa47c;
+  --tile: #f8efe9;
+}
+/* sage: soft green */
+:root[data-palette="sage"]:not([data-theme="dark"]) {
+  --bg: #f4f6ee;
+  --surface: #e6ecdc;
+  --border: #d5ddc6;
+  --text: #1a2015;
+  --text-2: #3c4634;
+  --text-3: #5d6853;
+  --accent: #6f9a3c;
+  --accent-strong: #40661c;
+  --tile: #ffffff;
+}
+:root[data-palette="sage"][data-theme="dark"] {
+  --bg: #121510;
+  --surface: #1a1f16;
+  --border: #2b3325;
+  --text: #e9eee1;
+  --text-2: #c4ccb8;
+  --text-3: #929d87;
+  --accent: #93c25e;
+  --accent-strong: #a9d878;
+  --tile: #f1f4ec;
+}
+/* mist: cool blue */
+:root[data-palette="mist"]:not([data-theme="dark"]) {
+  --bg: #f3f6f9;
+  --surface: #e4eaf1;
+  --border: #d4dce6;
+  --text: #141a21;
+  --text-2: #37424e;
+  --text-3: #5a6673;
+  --accent: #3b7bc4;
+  --accent-strong: #22599a;
+  --tile: #ffffff;
+}
+:root[data-palette="mist"][data-theme="dark"] {
+  --bg: #10141a;
+  --surface: #171d25;
+  --border: #27303c;
+  --text: #e6ecf3;
+  --text-2: #c1cbd7;
+  --text-3: #8e9aa8;
+  --accent: #6ea7ea;
+  --accent-strong: #8fbcf2;
+  --tile: #eef2f7;
+}
+
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -131,7 +227,8 @@ strong, b { color: var(--text); font-weight: 600; }
   font-size: 1rem;
   text-decoration-color: transparent;
 }
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
   color: var(--text);
   text-decoration-color: var(--accent);
 }
@@ -393,6 +490,37 @@ strong, b { color: var(--text); font-weight: 600; }
   word-break: break-word;
   font: 0.8125rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
+
+/* ---------- Publications page ---------- */
+.page-header { padding: 48px 0 4px; }
+.page-header h1 {
+  margin: 0 0 8px;
+  font-size: 2.375rem;     /* 38px, same as the homepage name */
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+.page-intro p { margin: 0; color: var(--text-3); font-size: 1.0625rem; }
+.page-intro a { color: var(--text-2); }
+.pubs-all h2.bibliography {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 32px 0 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.5rem;       /* 24px */
+  font-weight: 500;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.pubs-all h2.bibliography::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+.pubs-all ol.bibliography > li:first-child .pub-row { padding-top: 14px; }
 
 /* ---------- Experience ---------- */
 .exp-list { list-style: none; margin: 0; padding: 0; }
