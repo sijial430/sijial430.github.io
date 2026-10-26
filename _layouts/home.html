@@ -34,16 +34,7 @@ layout: v2
       {%- assign news = site.news | sort: "date" | reverse %}
       <ul class="news-list">
         {%- for item in news limit: site.announcements.limit %}
-        <li>
-          <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%b %Y" }}</time>
-          <div class="news-text">
-            {%- if item.inline -%}
-              {{ item.content | remove: '<p>' | remove: '</p>' | strip }}
-            {%- else -%}
-              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-            {%- endif -%}
-          </div>
-        </li>
+        {% include home_news_item.html item=item date_format="%b %Y" %}
         {%- endfor %}
       </ul>
       {%- assign news_size = news | size %}

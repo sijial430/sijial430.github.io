@@ -501,7 +501,8 @@ strong, b { color: var(--text); font-weight: 600; }
 }
 .page-intro p { margin: 0; color: var(--text-3); font-size: 1.0625rem; }
 .page-intro a { color: var(--text-2); }
-.pubs-all h2.bibliography {
+.pubs-all h2.bibliography,
+.year-heading {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -513,7 +514,8 @@ strong, b { color: var(--text); font-weight: 600; }
   font-weight: 500;
   font-variant-numeric: tabular-nums lining-nums;
 }
-.pubs-all h2.bibliography::before {
+.pubs-all h2.bibliography::before,
+.year-heading::before {
   content: "";
   width: 14px;
   height: 2px;
@@ -521,6 +523,8 @@ strong, b { color: var(--text); font-weight: 600; }
   border-radius: 1px;
 }
 .pubs-all ol.bibliography > li:first-child .pub-row { padding-top: 14px; }
+.news-all .news-list { padding-top: 8px; }
+.news-all .news-list li { grid-template-columns: 3.5rem 1fr; }
 
 /* ---------- Experience ---------- */
 .exp-list { list-style: none; margin: 0; padding: 0; }

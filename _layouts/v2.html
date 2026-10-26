@@ -50,7 +50,10 @@
     <div class="topbar-inner">
       <a class="brand" href="{{ home_url }}#about"><img src="{{ '/assets/img/logos/princeton-shield.png' | relative_url }}" alt="" aria-hidden="true">{{ full_name }}</a>
       <div class="nav-links">
-        {%- if home.news %}<a href="{{ home_url }}#news">News</a>{% endif %}
+        {%- if home.news -%}
+          {%- if is_home %}<a href="#news">News</a>
+          {%- else %}<a href="{{ '/news/' | relative_url }}"{% if page.permalink == '/news/' %} aria-current="page"{% endif %}>News</a>{% endif -%}
+        {%- endif %}
         {%- if home.selected_papers -%}
           {%- if is_home %}<a href="#publications">Publications</a>
           {%- else %}<a href="{{ '/publications/' | relative_url }}"{% if page.permalink == '/publications/' %} aria-current="page"{% endif %}>Publications</a>{% endif -%}

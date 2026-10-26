@@ -1,7 +1,24 @@
 ---
-layout: page
-title: news
+layout: v2
+title: News
 permalink: /news/
+description: News and updates from Sijia Liu, newest first.
 ---
+{%- comment -%} All news, grouped by year. Rows use _includes/home_news_item.html. {%- endcomment -%}
+{%- assign news = site.news | sort: "date" | reverse %}
+{%- assign years = news | group_by_exp: "item", "item.date | date: '%Y'" %}
+<header class="page-header">
+  <h1>News</h1>
+  <div class="page-intro"><p>All updates, newest first.</p></div>
+</header>
 
-{% include news.html %}
+<div class="news-all">
+  {%- for year in years %}
+  <h2 class="year-heading">{{ year.name }}</h2>
+  <ul class="news-list">
+    {%- for item in year.items %}
+    {% include home_news_item.html item=item date_format="%b" %}
+    {%- endfor %}
+  </ul>
+  {%- endfor %}
+</div>
