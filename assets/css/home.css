@@ -448,6 +448,19 @@ strong, b { color: var(--text); font-weight: 600; }
   font-style: normal;
   font-weight: 600;
 }
+.pub-tldr {
+  color: var(--text-2);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 6px !important;
+}
+.tldr-label {
+  color: var(--accent-strong);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-right: 4px;
+}
 .pub-links {
   display: flex;
   flex-wrap: wrap;

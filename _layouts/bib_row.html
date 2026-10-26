@@ -71,6 +71,11 @@
       {%- endif -%}
     </p>
 
+    {%- comment -%} TL;DR shows only in the homepage's Selected Publications. {%- endcomment -%}
+    {%- if entry.tldr and page.layout == "home" %}
+    <p class="pub-tldr"><span class="tldr-label">TL;DR</span> {{ entry.tldr }}</p>
+    {%- endif %}
+
     <p class="pub-links">
       {%- if entry.abstract -%}
         <span class="bracket">[<button type="button" class="link-btn" data-toggle="abs-{{ entry.key }}" aria-expanded="false" aria-controls="abs-{{ entry.key }}">abs</button>]</span>
