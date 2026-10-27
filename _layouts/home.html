@@ -25,11 +25,11 @@ layout: v2
         <div class="hero-bio">
           {{ content }}
         </div>
-        {%- if page.note %}
-        <p class="hero-note">{{ page.note }}</p>
-        {%- endif %}
       </div>
     </header>
+    {%- if page.note %}
+    <p class="hero-note">{{ page.note }}</p>
+    {%- endif %}
 
     {%- if page.news and site.announcements.enabled %}
     <section class="section" id="news">

@@ -12,7 +12,8 @@
   --text-2:    #46443e;  /* body, authors */
   --text-3:    #6c6a63;  /* dates, brackets, captions */
   --accent:    #7346c8;  /* purple: underlines, marks (5.8:1 on --bg) */
-  --accent-strong: #5d34ad; /* purple as text: Oral / award tags */
+  --accent-strong: #5d34ad; /* purple as text: TL;DR label, open toggles */
+  --tag:       #c4271c;  /* red: Oral / Best Paper tags (5.5:1 on --bg) */
   --tile:      #ffffff;  /* logo tiles stay white in both themes */
   --shadow:    0 1px 2px rgba(26, 25, 21, 0.05), 0 4px 14px rgba(26, 25, 21, 0.08);
   --shadow-lift: 0 2px 4px rgba(26, 25, 21, 0.06), 0 12px 28px rgba(26, 25, 21, 0.12);
@@ -32,6 +33,7 @@
   --text-3:    #a198b8;
   --accent:    #b08cff;  /* lavender: underlines, marks */
   --accent-strong: #c4a6ff;
+  --tag:       #ff7a70;  /* red: Oral / Best Paper tags (6.8:1 on --bg) */
   --tile:      #f6f3fb;
   --shadow:    0 1px 2px rgba(8, 4, 20, 0.4), 0 4px 14px rgba(8, 4, 20, 0.45);
   --shadow-lift: 0 2px 4px rgba(8, 4, 20, 0.45), 0 12px 28px rgba(8, 4, 20, 0.55);
@@ -308,11 +310,16 @@ strong, b { color: var(--text); font-weight: 600; }
   font-variant-numeric: lining-nums;
 }
 .hero-bio p { margin-bottom: 0.85em; }
+/* Full-width callout between the hero and News, left edge in line with the section headings. */
 .hero-note {
-  margin: 0;
-  color: var(--accent-strong);
-  font-size: 0.9375rem;    /* 15px */
-  font-style: italic;
+  margin: 16px 0 0;
+  padding: 12px 16px;
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .hero-links {
   display: flex;
@@ -450,7 +457,7 @@ strong, b { color: var(--text); font-weight: 600; }
 }
 .pub-venue .venue-name { color: var(--text-2); font-style: italic; }
 .oral-tag, .oral-tag b, .oral-tag i {
-  color: var(--accent-strong) !important;
+  color: var(--tag) !important;
   font-style: normal;
   font-weight: 600;
 }
