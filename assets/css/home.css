@@ -273,10 +273,14 @@ strong, b { color: var(--text); font-weight: 600; }
 .hero {
   display: grid;
   grid-template-columns: 210px 1fr;
-  gap: 40px;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "photo body" "links body";
+  gap: 22px 40px;
   align-items: start;
   padding: 48px 0 8px;
 }
+.hero-photo-col { grid-area: photo; }
+.hero-body { grid-area: body; }
 .hero-photo {
   display: block;
   width: 100%;
@@ -303,12 +307,7 @@ strong, b { color: var(--text); font-weight: 600; }
   font-size: 1rem;
   font-style: italic;
 }
-.hero-email {
-  margin: 6px 0 0;
-  color: var(--text-3);
-  font-size: 1rem;
-  font-variant-numeric: lining-nums;
-}
+.hero-bio { margin-top: 18px; }
 .hero-bio p { margin-bottom: 0.85em; }
 /* Full-width callout between the hero and News, left edge in line with the section headings. */
 .hero-note {
@@ -321,23 +320,31 @@ strong, b { color: var(--text); font-weight: 600; }
   font-size: 1rem;
   line-height: 1.5;
 }
+/* Contact list under the photo: one link per line, icons in a column. */
 .hero-links {
+  grid-area: links;
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px 20px;
-  margin: 10px 0 22px;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+  padding: 0 0 0 4px;
+  list-style: none;
   font-size: 1rem;
+  font-variant-numeric: lining-nums;
 }
 .hero-links a {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 10px;
   color: var(--text-2);
   text-decoration-color: transparent;
+  overflow-wrap: anywhere;
 }
+.hero-links i { width: 1.15em; flex: none; text-align: center; }
+.hero-links .icon-x { flex: none; }
 .hero-links a:hover { color: var(--text); text-decoration-color: var(--accent); }
 .hero-links i { color: var(--text-3); font-size: 0.95em; transition: color 120ms ease-out; }
-.hero-links .icon-x { width: 0.85em; height: 0.85em; fill: var(--text-3); transition: fill 120ms ease-out; }
+.hero-links .icon-x { width: 1.15em; height: 0.85em; fill: var(--text-3); transition: fill 120ms ease-out; }
 .hero-links a:hover i { color: var(--accent); }
 .hero-links a:hover .icon-x { fill: var(--accent); }
 
@@ -661,8 +668,15 @@ a.exp-org:hover { text-decoration-color: var(--accent); }
   .nav-links { display: none; }
 }
 @media (max-width: 720px) {
-  .hero { grid-template-columns: 1fr; gap: 20px; padding-top: 28px; }
-  .hero-photo-col { max-width: 170px; }
+  /* Phones: photo with the contact list beside it, then name and bio below. */
+  .hero {
+    grid-template-columns: 132px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "photo links" "body body";
+    gap: 20px 18px;
+    padding-top: 28px;
+  }
+  .hero-links { align-self: center; gap: 6px; padding-left: 0; font-size: 0.9375rem; }
   .hero-body h1 { font-size: 2rem; }
   .pub-row { grid-template-columns: 1fr; gap: 12px; }
   .pub-media { max-width: 360px; }

@@ -6,7 +6,7 @@ meta_description: Sijia Liu - CS PhD student at Princeton University working on 
 
 role: PhD student in <a href="https://www.cs.princeton.edu/">Computer Science</a> at <a href="https://www.princeton.edu/">Princeton University</a>
 interests: ML · NLP · Human-AI Collaboration
-note: I’m currently looking for industry internships in the Bay Area! ✨  # small line under the bio; delete to hide
+note: I’m currently looking for industry internships in the SF / Bay Area. 👩‍🎓  # small line under the bio; delete to hide
 
 profile:
   image: sijial_pic_cropped.jpg
