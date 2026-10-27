@@ -5,7 +5,7 @@ permalink: /
 meta_description: Sijia Liu - CS PhD student at Princeton University working on LLM post-training and training and evaluating long-horizon agents.
 
 role: PhD student in <a href="https://www.cs.princeton.edu/">Computer Science</a> at <a href="https://www.princeton.edu/">Princeton University</a>
-interests: ML · NLP · Human-AI Collaboration
+interests: Continual Learning · Agents · Alignment
 note: I’m currently looking for industry internships in the SF / Bay Area! 👩‍🎓  # small line under the bio; delete to hide
 
 profile:
