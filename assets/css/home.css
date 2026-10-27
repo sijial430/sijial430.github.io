@@ -308,6 +308,12 @@ strong, b { color: var(--text); font-weight: 600; }
   font-variant-numeric: lining-nums;
 }
 .hero-bio p { margin-bottom: 0.85em; }
+.hero-note {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 0.9375rem;    /* 15px */
+  font-style: italic;
+}
 .hero-links {
   display: flex;
   flex-wrap: wrap;
