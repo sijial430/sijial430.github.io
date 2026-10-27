@@ -17,6 +17,7 @@ experience: true  # list from _data/experience.yml
 education: false  # Education block under Experience, from _data/education.yml
 awards: false  # list from _data/awards.yml
 service: false  # list from _data/service.yml
+blogs: true  # Blogs section ("Coming soon" for now)
 life: true  # list from _data/life.yml
 
 # Selected papers are grouped by the `topic` field in papers.bib

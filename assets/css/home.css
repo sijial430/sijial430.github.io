@@ -350,6 +350,7 @@ strong, b { color: var(--text); font-weight: 600; }
 
 /* ---------- Sections ---------- */
 .section { padding-top: 40px; }
+.coming-soon { margin: 0; color: var(--text-3); font-style: italic; }
 .section h2 {
   margin: 0 0 18px;
   padding-bottom: 10px;
