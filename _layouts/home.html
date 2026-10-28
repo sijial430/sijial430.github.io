@@ -2,7 +2,11 @@
 layout: v2
 ---
 {%- comment -%} Homepage body; head, top bar and footer come from _layouts/v2.html. {%- endcomment -%}
-{%- assign full_name = site.first_name | append: " " | append: site.last_name -%}
+{%- if site.nickname -%}
+  {%- assign full_name = site.first_name | append: " (" | append: site.nickname | append: ") " | append: site.last_name -%}
+{%- else -%}
+  {%- assign full_name = site.first_name | append: " " | append: site.last_name -%}
+{%- endif -%}
     <header class="hero" id="about">
       {%- if page.profile.image %}
       <div class="hero-photo-col">

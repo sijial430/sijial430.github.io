@@ -2,7 +2,7 @@
 layout: home
 title: Home
 permalink: /
-meta_description: Sijia Liu - CS PhD candidate at Princeton University working on LLM post-training and training and evaluating long-horizon agents.
+meta_description: Sijia (Letti) Liu - CS PhD candidate at Princeton University working on LLM post-training and training and evaluating long-horizon agents.
 
 role: PhD Candidate in <a href="https://www.cs.princeton.edu/">Computer Science</a> at <a href="https://www.princeton.edu/">Princeton University</a>
 interests: RSI · Discovery · Agents · Alignment

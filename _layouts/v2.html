@@ -4,7 +4,11 @@
   Shared shell for the redesigned pages (home, publications): head, top bar, footer.
   Nav links follow the section switches set on the homepage (_pages/about.md).
 {%- endcomment -%}
-{%- assign full_name = site.first_name | append: " " | append: site.last_name -%}
+{%- if site.nickname -%}
+  {%- assign full_name = site.first_name | append: " (" | append: site.nickname | append: ") " | append: site.last_name -%}
+{%- else -%}
+  {%- assign full_name = site.first_name | append: " " | append: site.last_name -%}
+{%- endif -%}
 {%- assign home = site.pages | where: "permalink", "/" | first -%}
 {%- if page.permalink == "/" -%}
   {%- assign is_home = true -%}

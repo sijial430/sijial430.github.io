@@ -2,7 +2,7 @@
 layout: pubs
 permalink: /publications/
 title: Publications
-description: Publications by Sijia Liu, newest first.
+description: Publications by Sijia (Letti) Liu, newest first.
 nav: true
 nav_order: 1
 ---
