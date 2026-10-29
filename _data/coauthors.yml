@@ -1,15 +1,116 @@
-"Di Jin":
-  - firstname: ["Di", "D.", "D. Jin", "Di Jin"]
-    url: https://jind11.github.io/
+# Links for coauthor names in publication lists (_layouts/bib_row.html).
+# Key: the name exactly as it appears in papers.bib, written "First Last". Value: Google Scholar profile.
+# Checked Oct 2026 against each profile's name, affiliation and papers. People with no confirmed
+# Scholar profile are left out (shown unlinked): Andrew Wirth, Sarik Ghazarian, and most of the
+# Alexa Prize team on the SocialBot 5 paper.
+
+"Mohit Bansal":
+  - url: https://scholar.google.com/citations?user=DN8QtscAAAAJ
+
+"Haw-Shiuan Chang":
+  - url: https://scholar.google.com/citations?user=fdGXVd4AAAAJ
+
+"Tagyoung Chung":
+  - url: https://scholar.google.com/citations?user=_-egoNcAAAAJ
+
+"Luke Dai":
+  - url: https://scholar.google.com/citations?user=kgp-dTIAAAAJ
+
+"Kawin Ethayarajh":
+  - url: https://scholar.google.com/citations?user=7SUV6rQAAAAJ
+
+"Thomas Palmeira Ferraz":
+  - url: https://scholar.google.com/citations?user=piIjq8MAAAAJ
+
+"Xingyu Fu":
+  - url: https://scholar.google.com/citations?user=5p_uBNQAAAAJ
+
+"Spandana Gella":
+  - url: https://scholar.google.com/citations?user=fChTW6MAAAAJ
+
+"Reza Ghanadan":
+  - url: https://scholar.google.com/citations?user=00ncu3cAAAAJ
+
+"Prasoon Goyal":
+  - url: https://scholar.google.com/citations?user=vlDYiZoAAAAJ
+
+"Prakhar Gupta":
+  - url: https://scholar.google.com/citations?user=YuFcRF0AAAAJ
+
+"Dilek Hakkani-Tur":
+  - url: https://scholar.google.com/citations?user=GMcL_9kAAAAJ
+
+"Dilek Hakkani-Tür":
+  - url: https://scholar.google.com/citations?user=GMcL_9kAAAAJ
 
 "Behnam Hedayatnia":
-  - firstname: ["Behnam", "B.", "B. Hedayatnia", "Behnam Hedayatnia"]
-    url: https://scholar.google.com/citations?user=MTG_OgQAAAAJ&hl=en
+  - url: https://scholar.google.com/citations?user=MTG_OgQAAAAJ
+
+"Julia Hirschberg":
+  - url: https://scholar.google.com/citations?user=Qrd7FCoAAAAJ
+
+"Di Jin":
+  - url: https://scholar.google.com/citations?user=x5QTK9YAAAAJ
+
+"Michael Johnston":
+  - url: https://scholar.google.com/citations?user=hEous9QAAAAJ
+
+"Patrick Lange":
+  - url: https://scholar.google.com/citations?user=6TxeqJwAAAAJ
+
+"Bangzheng Li":
+  - url: https://scholar.google.com/citations?user=UcegV-cAAAAJ
+
+"Yu-Hsiang Lin":
+  - url: https://scholar.google.com/citations?user=AGNf2NkAAAAJ
 
 "Yang Liu":
-  - firstname: ["Yang", "Y. Liu", "Yang Liu"]
-    url: https://scholar.google.com/citations?user=w90wOucAAAAJ&hl=en
+  - url: https://scholar.google.com/citations?user=w90wOucAAAAJ
 
-"Dilek Hakkani-Tur": 
-  - firstname: ["Dilek Hakkani-Tur", "D. Hakkani-Tur"]
-    url: https://cs.illinois.edu/about/people/all-faculty/dilek
+"Arindam Mandal":
+  - url: https://scholar.google.com/citations?user=tV1hW0YAAAAJ
+
+"Kartik Mehta":
+  - url: https://scholar.google.com/citations?user=gInh5hIAAAAJ
+
+"Prateek Mittal":
+  - url: https://scholar.google.com/citations?user=xTKD8J4AAAAJ
+
+"Niklas Muennighoff":
+  - url: https://scholar.google.com/citations?user=Me0IoRMAAAAJ
+
+"Karthik Narasimhan":
+  - url: https://scholar.google.com/citations?user=euc0GX4AAAAJ
+
+"Karthik R. Narasimhan":
+  - url: https://scholar.google.com/citations?user=euc0GX4AAAAJ
+
+"Shereen Oraby":
+  - url: https://scholar.google.com/citations?user=9ZOJRK4AAAAJ
+
+"Alexandros Papangelis":
+  - url: https://scholar.google.com/citations?user=BAyHAC0AAAAJ
+
+"Nanyun Peng":
+  - url: https://scholar.google.com/citations?user=XxRXvX0AAAAJ
+
+"Violet Peng":
+  - url: https://scholar.google.com/citations?user=XxRXvX0AAAAJ
+
+"Daniel Pressel":
+  - url: https://scholar.google.com/citations?user=MOfePlEAAAAJ
+
+"Sattvik Sahai":
+  - url: https://scholar.google.com/citations?user=yS-FjPgAAAAJ
+
+"Hangjie Shi":
+  - url: https://scholar.google.com/citations?user=7r5shcMAAAAJ
+
+"Vivek Subramanian":
+  - url: https://scholar.google.com/citations?user=fyI0uEkAAAAJ
+
+"Pramod Viswanath":
+  - url: https://scholar.google.com/citations?user=lPycXNcAAAAJ
+
+"Peiyang Xu":
+  - url: https://scholar.google.com/citations?user=9rPOyVsAAAAJ
