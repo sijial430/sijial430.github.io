@@ -80,16 +80,17 @@
       {%- if entry.abstract -%}
         <span class="bracket">[<button type="button" class="link-btn" data-toggle="abs-{{ entry.key }}" aria-expanded="false" aria-controls="abs-{{ entry.key }}">abs</button>]</span>
       {%- endif -%}
-      {%- if entry.arxiv -%}
-        <span class="bracket">[<a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>]</span>
-      {%- elsif entry.url -%}
-        <span class="bracket">[<a href="{{ entry.url }}">paper</a>]</span>
+      {%- comment -%} One [paper] link: arXiv if there is one, else the proceedings page, else the local PDF. {%- endcomment -%}
+      {%- assign paper_href = nil -%}
+      {%- if entry.arxiv -%}{%- assign paper_href = entry.arxiv | prepend: 'https://arxiv.org/abs/' -%}
+      {%- elsif entry.url -%}{%- assign paper_href = entry.url -%}
+      {%- elsif entry.html -%}{%- assign paper_href = entry.html -%}
+      {%- elsif entry.pdf -%}
+        {%- if entry.pdf contains '://' -%}{%- assign paper_href = entry.pdf -%}{%- else -%}{%- assign paper_href = entry.pdf | prepend: '/assets/pdf/' | relative_url -%}{%- endif -%}
       {%- endif -%}
-      {%- if entry.pdf -%}
-        {%- if entry.pdf contains '://' -%}{%- assign pdf_href = entry.pdf -%}{%- else -%}{%- assign pdf_href = entry.pdf | prepend: '/assets/pdf/' | relative_url -%}{%- endif -%}
-        <span class="bracket">[<a href="{{ pdf_href }}">pdf</a>]</span>
+      {%- if paper_href -%}
+        <span class="bracket">[<a href="{{ paper_href }}">paper</a>]</span>
       {%- endif -%}
-      {%- if entry.html -%}<span class="bracket">[<a href="{{ entry.html }}">html</a>]</span>{%- endif -%}
       {%- if entry.website -%}<span class="bracket">[<a href="{{ entry.website }}">website</a>]</span>{%- endif -%}
       {%- if entry.blog -%}<span class="bracket">[<a href="{{ entry.blog }}">blog</a>]</span>{%- endif -%}
       {%- if entry.code -%}<span class="bracket">[<a href="{{ entry.code }}">code</a>]</span>{%- endif -%}
